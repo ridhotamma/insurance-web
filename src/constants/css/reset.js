@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import fonts from './fonts';
 
 const reset = css`
     html {
@@ -35,6 +36,7 @@ const reset = css`
         margin: 0;
         font-size: 1rem;
         font-weight: 400;
+        font-family: ${fonts.sansPro};
     }
 
     base,
@@ -121,6 +123,18 @@ const reset = css`
 
     body {
         box-sizing: border-box;
+    }
+
+    input, textarea {
+        padding: 30px 10px;
+        width: 100%;
+        border-bottom: 1px black solid;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        border: none;
+        border-bottom: 1px black solid;
     }
 `;
 
